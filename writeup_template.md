@@ -29,7 +29,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale,
 then I select the rigon of interest by vectors.
 
 
-
+[//]: # (Image References)
 [image2]: ./examples/reigon_of_interest.png "ReigonofInterest"
 
 
