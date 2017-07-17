@@ -30,7 +30,7 @@ then I select the rigon of interest by vectors.
 
 
 [//]: # (Image References)
-[image2]: ./examples/reigon_of_interest.jpg "ReigonofInterest"
+[image1]: ./examples/reigon_of_interest.jpg "ReigonofInterest"
 
 
 gaussian smoothing, edge detection, find the reigon of interest. Thirdly, I colored the reigon with canny fuction. Fourthly, I drawed the hough lines and separate the right and left lines by line slops. 
