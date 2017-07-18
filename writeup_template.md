@@ -23,8 +23,7 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale,
-
+My pipeline consisted of 5 steps. First, I converted the images to grayscale.
 
 then I select the rigon of interest by vectors. the region is a trapezoid, which shows in the picture.
 
@@ -32,33 +31,24 @@ then I select the rigon of interest by vectors. the region is a trapezoid, which
 ![Screenshot](./examples/reigon_of_interest.jpg)
 
 
-Thirdly, I smooth the picture by gaussian, detect edges, mask reigon of interest.
+Thirdly, I smooth the picture by gaussian.which is essentially a way of suppressing noise and spurious gradients by averaging. because the lines are not the same color under different lighting conditions (day, night, etc) and even lines of the same color under may fail to be detected by our simple color selection, the canny method is best choice to detect edges. Then mask reigon of interest, we are suppose to draw the lines successfully. 
 
 Fourthly, Transfer the lines to the hough coordinate. And separate right and left lines by positive and negative slops.
 
-Next, I find the line endpoints, then extend the lines by a specific length,
 
+Next, I find the line endpoints, then extend the lines by a specific length. In this way, the dash lines could connect together.
 
+For the challenge project, there are two problems.
 
-Thirdly, I colored the reigon with canny fuction. Fourthly, I drawed the hough lines and separate the right and left lines by line slops. 
+First of all. under the shadow area, the program could not recoginze the road lines. Added a color mask in the range of [188,188,0] to [255,255,255] to the orignal picture. So the program could works again.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
+Secondly, the left line is off and on. In order to prevent jitterying, add a global variable for the line from the proir frame.
 
 ### 2. Identify potential shortcomings with your current pipeline
 
+One potential shortcoming would be what would happen when the line is not a stright line. The line is still keep stright. 
 
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
