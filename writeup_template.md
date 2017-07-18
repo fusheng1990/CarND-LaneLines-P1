@@ -24,7 +24,9 @@ The goals / steps of this project are the following:
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale.
+
 ![grayscale](./examples/grayscale.jpg)
+
 then I select the rigon of interest by vectors. the region is a trapezoid, which shows in the picture.
 
 
