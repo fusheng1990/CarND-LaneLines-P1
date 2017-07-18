@@ -29,8 +29,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale,
 then I select the rigon of interest by vectors.
 
 
-[//]: # (Image References)
-[image2]: ./examples/grayscale.jpg "ReigonofInterest"
+![Screenshot](./examples/reigon_of_interest.jpg)
 
 
 gaussian smoothing, edge detection, find the reigon of interest. Thirdly, I colored the reigon with canny fuction. Fourthly, I drawed the hough lines and separate the right and left lines by line slops. 
