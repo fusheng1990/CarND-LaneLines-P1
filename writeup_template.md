@@ -26,13 +26,21 @@ The goals / steps of this project are the following:
 My pipeline consisted of 5 steps. First, I converted the images to grayscale,
 
 
-then I select the rigon of interest by vectors.
+then I select the rigon of interest by vectors. the region is a trapezoid, which shows in the picture.
 
 
 ![Screenshot](./examples/reigon_of_interest.jpg)
 
 
-gaussian smoothing, edge detection, find the reigon of interest. Thirdly, I colored the reigon with canny fuction. Fourthly, I drawed the hough lines and separate the right and left lines by line slops. 
+Thirdly, I smooth the picture by gaussian, detect edges, mask reigon of interest.
+
+Fourthly, Transfer the lines to the hough coordinate. And separate right and left lines by positive and negative slops.
+
+Next, I find the line endpoints, then extend the lines by a specific length,
+
+
+
+Thirdly, I colored the reigon with canny fuction. Fourthly, I drawed the hough lines and separate the right and left lines by line slops. 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
