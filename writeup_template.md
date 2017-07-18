@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/reigon_of_interest.jpg "ReigonofInterest"
+[image1]: ./examples/grayscale.jpg "/grayscale"
 
 ---
 
@@ -28,7 +28,7 @@ My pipeline consisted of 5 steps. First, I converted the images to grayscale.
 then I select the rigon of interest by vectors. the region is a trapezoid, which shows in the picture.
 
 
-![Screenshot](./examples/reigon_of_interest.jpg)
+![reigonofinterest](./examples/reigon_of_interest.jpg)
 
 
 Thirdly, I smooth the picture by gaussian.which is essentially a way of suppressing noise and spurious gradients by averaging. because the lines are not the same color under different lighting conditions (day, night, etc) and even lines of the same color under may fail to be detected by our simple color selection, the canny method is best choice to detect edges. Then mask reigon of interest, we are suppose to draw the lines successfully. 
