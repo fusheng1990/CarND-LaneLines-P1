@@ -140,6 +140,16 @@ def lines_mean(lines):
 
     return np.array([line], dtype=np.int32)
 
+def merge_prev(line,prev):
+    
+    if prev != None:
+        line = np.concatenate((line[0],prev[0]))
+        x1,y1,x2,y2 = np.mean(line,axis=0)
+        line = np.array([[[x1,y1,x2,y2]]],dtype = np.int32)
+        return line
+    else:
+        return line
+
 
 def process_image(image):
     # NOTE: The output you return should be a color image (3 channel) for processing video below
