@@ -48,9 +48,10 @@ Secondly, the left line is off and on. In order to prevent jitterying, add a glo
 
 ### 2. Identify potential shortcomings with your current pipeline
 
-One potential shortcoming would be what would happen when the line is not a stright line. The line is still keep stright. 
+1. One potential shortcoming would be what would happen when the line is not a stright line. The line is still keep stright. 
 
 
 
 ### 3. Suggest possible improvements to your pipeline
 
+1. 
