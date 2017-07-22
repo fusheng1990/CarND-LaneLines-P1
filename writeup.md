@@ -50,8 +50,10 @@ Secondly, the left line is off and on. In order to prevent jitterying, add a glo
 
 1. One potential shortcoming would be what would happen when the line is not a stright line. The line is still keep stright. 
 
-２. Sometimes, the line is not identified.
+２. Sometimes, the line is not identified. the drawed line is flickered.
 
 ### 3. Suggest possible improvements to your pipeline
 
-1. The size of the line is too big, and the region of intetest would include some cars. 
+1. The size of the line is too big, and the region of intetest would include some cars, which is unwanted.
+
+
