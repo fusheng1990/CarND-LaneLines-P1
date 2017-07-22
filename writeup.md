@@ -38,7 +38,7 @@ Thirdly, I smooth the picture by gaussian.which is essentially a way of suppress
 Fourthly, Transfer the lines to the hough coordinate. And separate right and left lines by positive and negative slops.
 
 
-Next, I find the line endpoints, then extend the lines by a specific length. In this way, the dash lines could connect together.
+Next, because the hough lines segments is discontinuity, I extent the lanes and make it clear to see. In order to achieve the goal, I find the line endpoints, then extend the lines by a specific length. In this way, the dash lines could connect together.
 
 For the challenge project, there are two problems.
 
@@ -46,14 +46,17 @@ First of all. under the shadow area, the program could not recoginze the road li
 
 Secondly, the left line is off and on. In order to prevent jitterying, add a global variable for the line from the proir frame.
 
+![reigonofinterest](./examples/challenge_p2.jpg)
+
 ### 2. Identify potential shortcomings with your current pipeline
 
 1. One potential shortcoming would be what would happen when the line is not a stright line. The line is still keep stright. 
 
-２. Sometimes, the line is not identified. the drawed line is flickered.
+２. Sometimes, the line is not identified. Especially, the left line is off and on in the challenge project.
 
 ### 3. Suggest possible improvements to your pipeline
 
 1. The size of the line is too big, and the region of intetest would include some cars, which is unwanted.
+2. in the chanellenge project, the color mask region should modified, so that it would better performance in the shade region. 
 
 
